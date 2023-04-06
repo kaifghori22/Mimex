@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mimex</string>
+    <string name="navigationOpen">Open Navigation drawer </string>
+    <string name="navigationClose">Close Navigation drawer </string>
 </resources>
