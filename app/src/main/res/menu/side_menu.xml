@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/home_vector"
+            android:title="Home" />
+        <item
+            android:id="@+id/signs_menu"
+            android:icon="@drawable/sign_vector"
+            android:title="Signs" />
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Sharing">
+            <menu>
+                <item
+                    android:id="@+id/share_menu"
+                    android:icon="@drawable/share_vector"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/refer_menu"
+                    android:icon="@drawable/refer_vector"
+                    android:title="Refer" />
+
+            </menu>
+        </item>
+    </group>
+</menu>
