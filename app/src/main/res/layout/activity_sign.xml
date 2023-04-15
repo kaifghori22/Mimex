@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/logo_name_toolbar" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp">
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="85dp"
+                android:id="@+id/WhatsUrName"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/neon_green"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/WhereULive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="What is your name ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_signs_page"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="45dp"
+                android:id="@+id/WhereULive"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/neon_green"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/HowRU"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WhatsUrName"
+                app:layout_constraintVertical_bias="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="Where do you live ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_signs_page"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="45dp"
+                android:id="@+id/HowRU"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/neon_green"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/HowOldRU"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WhereULive"
+                app:layout_constraintVertical_bias="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="How are you ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_signs_page"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="45dp"
+                android:id="@+id/HowOldRU"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/neon_green"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/HowCanIHelpU"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/HowRU"
+                app:layout_constraintVertical_bias="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="How old are you ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_signs_page"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="45dp"
+                android:id="@+id/HowCanIHelpU"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/neon_green"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/ThankingYou"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/HowOldRU"
+                app:layout_constraintVertical_bias="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="How Can I Help You ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_signs_page"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="45dp"
+                android:id="@+id/ThankingYou"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/neon_green"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/HowCanIHelpU"
+                app:layout_constraintVertical_bias="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="Thank You !"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_signs_page"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>
